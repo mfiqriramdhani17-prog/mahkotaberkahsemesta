@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Katalog Produk CV Mahkota Berkah Semesta — Seragam, Kaos, Jaket, dan Custom untuk perusahaan dan instansi."/>
+  <title>Katalog Produk | CV Mahkota Berkah Semesta</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/img/MBS LOGO.png"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────── -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"> <img src="assets/img/MBS LOGO.png"></div>
+          <div class="logo-text">
+            <span class="logo-name">Mahkota Berkah</span>
+            <span class="logo-sub">Semesta</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="index.html#layanan">Layanan</a></li>
+          <li><a href="katalog.html" class="active">Katalog</a></li>
+          <li><a href="index.html#portofolio">Portofolio</a></li>
+          <li><a href="index.html#kontak">Kontak</a></li>
+          <li class="mobile-cp-btn" style="display:none;">
+            <button class="btn btn-gold" onclick="openCompanyProfile()">📄 Company Profile</button>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-cp" onclick="openCompanyProfile()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Company Profile
+          </button>
+          <button class="btn btn-gold" onclick="openWhatsAppGeneral()">Hubungi Kami</button>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── KATALOG HEADER ─────────────────────────── -->
+  <header class="katalog-header">
+    <div class="container">
+      <span class="section-label">Katalog Produk</span>
+      <h1 class="section-title" style="margin-bottom:0.75rem;">Semua Produk Kami</h1>
+      <p>Temukan produk yang tepat untuk kebutuhan seragam dan pakaian custom tim Anda</p>
+    </div>
+  </header>
+
+  <!-- ── FILTER & SEARCH ────────────────────────── -->
+  <div class="katalog-controls">
+    <div class="container">
+      <div class="controls-inner">
+        <div class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="searchInput" placeholder="Cari produk…" autocomplete="off"/>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">Semua</button>
+          <button class="filter-tab" data-filter="seragam">Seragam</button>
+          <button class="filter-tab" data-filter="kaos">Kaos</button>
+          <button class="filter-tab" data-filter="jaket">Jaket</button>
+          <button class="filter-tab" data-filter="custom">Custom</button>
+        </div>
+        <select class="sort-select" id="sortSelect">
+          <option value="default">Urutan Default</option>
+          <option value="name-az">Nama A–Z</option>
+        </select>
+        <span class="results-info" id="resultsCount">7 produk ditemukan</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PRODUCTS GRID ──────────────────────────── -->
+  <div class="katalog-products">
+    <div class="container">
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </div>
+
+  <!-- ── CTA + CP ───────────────────────────────── -->
+  <section class="cta-section" style="padding:4rem 0;">
+    <div class="container">
+      <span class="section-label">Ada Pertanyaan?</span>
+      <h2 style="color:var(--white);margin-bottom:0.75rem;">Tidak menemukan yang Anda cari?</h2>
+      <p style="color:rgba(255,255,255,0.72);max-width:480px;margin:0 auto 2rem;">Kami juga melayani produksi custom penuh sesuai spesifikasi. Konsultasi gratis!</p>
+      <div class="cta-actions">
+        <button class="btn btn-white btn-lg" onclick="openWhatsAppGeneral('Halo, saya butuh produk custom yang tidak ada di katalog. Boleh diskusi?')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+          Diskusi Custom Order
+        </button>
+        <button class="btn btn-ghost-light btn-lg" onclick="openCompanyProfile()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Lihat Company Profile
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:0;">
+            <div class="logo-icon"> <img src="assets/img/MBS LOGO.png"></div>
+            <div class="logo-text">
+              <span class="logo-name">Mahkota Berkah</span>
+              <span class="logo-sub">Semesta</span>
+            </div>
+          </div>
+          <p>Solusi terpercaya untuk pengadaan seragam, pakaian custom, dan perlengkapan kerja di seluruh Indonesia.</p>
+          <div class="footer-socials">
+            <button class="social-btn" onclick="openWhatsAppGeneral()" title="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+            </button>
+            <button class="social-btn" title="Instagram"><img src="assets/icon/instagram.png"></button>
+            <button class="social-btn" title="Facebook"><img src="assets/icon/fb_icon.png"></button>
+            <button class="social-btn" onclick="openCompanyProfile()" title="Company Profile">📄</button>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#tentang">Tentang Kami</a></li>
+            <li><a href="index.html#layanan">Layanan</a></li>
+            <li><a href="katalog.html">Katalog Produk</a></li>
+            <li><a href="index.html#portofolio">Portofolio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kategori</h4>
+          <ul>
+            <li><a href="#" onclick="setFilter('seragam')">Seragam PDH / PDL</a></li>
+            <li><a href="#" onclick="setFilter('kaos')">Kaos Custom</a></li>
+            <li><a href="#" onclick="setFilter('jaket')">Jaket Hoodie</a></li>
+            <li><a href="#" onclick="setFilter('custom')">Rompi &amp; Wearpack</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"/></svg>
+            <span>+62 812-2308-9940</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>official@mahkotaberkahsemesta.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Jl. Supratman No.94, Bandung</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 CV Mahkota Berkah Semesta. Semua hak cipta dilindungi.</p>
+        <p>Dibuat dengan ❤️ untuk klien terbaik kami</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING WA ─────────────────────────────── -->
+  <button class="wa-float" id="waFloat" aria-label="Hubungi via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+    <span>Hubungi Kami</span>
+  </button>
+
+  <!-- ── MODAL ───────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalContent"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function setFilter(cat) {
+      const tab = document.querySelector(`.filter-tab[data-filter="${cat}"]`);
+      if (tab) tab.click();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

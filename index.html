@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="CV Mahkota Berkah Semesta – Solusi pengadaan seragam, kaos, jaket, dan produk custom terpercaya untuk perusahaan, instansi, dan proyek."/>
+  <title>CV Mahkota Berkah Semesta | Pengadaan Seragam & Produk Custom</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/img/MBS LOGO.png"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon"> <img src="assets/img/MBS LOGO.png" alt="Logo MBS"> </div>
+          <div class="logo-text">
+            <span class="logo-name">Mahkota Berkah</span>
+            <span class="logo-sub">Semesta</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <!-- mobile only -->
+          <li class="mobile-cp-btn" style="display:none;">
+            <button class="btn btn-gold" onclick="openCompanyProfile()">📄 Company Profile</button>
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-cp" onclick="openCompanyProfile()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Company Profile
+          </button>
+          <button class="btn btn-gold" onclick="openWhatsAppGeneral()">Hubungi Kami</button>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Terpercaya Sejak 2017
+        </div>
+
+        <h1 class="hero-title">
+          Solusi Pengadaan <em>Seragam</em> &amp; Produk Custom Terpercaya
+        </h1>
+        <p class="hero-sub">
+          Menyediakan kebutuhan pengadaan untuk perusahaan, instansi, dan proyek dengan kualitas terbaik dan harga kompetitif. Custom sesuai kebutuhan Anda.
+        </p>
+
+        <div class="hero-actions">
+          <a href="katalog.html" class="btn btn-gold btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            Lihat Katalog
+          </a>
+          <button class="btn btn-ghost-light btn-lg" onclick="openWhatsAppGeneral('Halo, saya ingin konsultasi mengenai kebutuhan seragam custom.')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+            Konsultasi WhatsApp
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">50<span>+</span></div>
+            <div class="stat-label">Klien Aktif</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">9<span>+</span></div>
+            <div class="stat-label">Tahun Pengalaman</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100K<span>+</span></div>
+            <div class="stat-label">Produk Terkirim</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- floating product cards -->
+    <div class="hero-visual">
+      <div class="hero-cards-stack">
+        <div class="hero-card">
+          <div class="hcard-icon"><img src="assets/icon/seragam-pdh.png"></div>
+          <div class="hcard-title">Seragam PDH Premium</div>
+          <div class="hcard-sub">Custom bordir &amp; sablon</div>
+        </div>
+        <div class="hero-card">
+          <div class="hcard-icon"><img src="assets/icon/jaket_hoodie.png"></div>
+          <div class="hcard-title">Jaket Hoodie Custom</div>
+          <div class="hcard-sub">Fleece premium 280gsm</div>
+        </div>
+        <div class="hero-card">
+          <div class="hcard-icon"><img src="assets/icon/kaos_polo.png"></div>
+          <div class="hcard-title">Kaos Polo Bordir</div>
+          <div class="hcard-sub">Lacoste premium breathable</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMPANY PROFILE BANNER ──────────────────── -->
+  <div class="cp-banner">
+    <div class="container">
+      <div class="cp-inner">
+        <div class="cp-text">
+          <span class="section-label">Dokumen Resmi</span>
+          <h3>Unduh Company Profile Kami</h3>
+          <p>Dapatkan informasi lengkap mengenai perusahaan, layanan, dan portofolio kami dalam satu dokumen profesional.</p>
+        </div>
+        <div class="cp-actions">
+          <button class="btn btn-gold" onclick="openCompanyProfile()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Company Profile
+          </button>
+          <button class="btn btn-outline-gold" onclick="openCompanyProfile()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Lihat Online
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TENTANG ─────────────────────────────────── -->
+  <section class="about" id="tentang">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-visual reveal">
+          <div class="about-img-main"> <img src="assets/img/gambar1.png">
+            <div class="about-img-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              </svg>
+              <span>Foto Tim / Galeri Produksi</span>
+            </div>
+          </div>
+          <div class="about-badge-float">
+            <strong>9+</strong>
+            <span>Tahun Melayani</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label reveal">Tentang Kami</span>
+          <h2 class="section-title reveal">Mitra Pengadaan Pakaian yang Dapat Anda Percaya</h2>
+          <p class="about-desc reveal">
+            CV Mahkota Berkah Semesta adalah perusahaan pengadaan barang dan jasa yang telah berdiri sejak 2017, dipercaya oleh ratusan klien dari berbagai sektor — perusahaan swasta, instansi pemerintah, hingga proyek konstruksi berskala besar.
+          </p>
+          <p class="about-desc reveal" style="margin-top:-0.5rem;">
+            Kami menghadirkan solusi lengkap untuk kebutuhan seragam dan pakaian kerja: dari desain, produksi, bordir, sablon, hingga pengiriman ke seluruh Indonesia dengan standar kualitas dan ketepatan waktu terjamin.
+          </p>
+
+          <div class="vm-cards">
+            <div class="vm-card reveal">
+              <h4>Visi</h4>
+              <p>Menjadi mitra pengadaan pakaian terpercaya dan terkemuka di Indonesia yang mengutamakan kualitas dan kepuasan klien.</p>
+            </div>
+            <div class="vm-card reveal reveal-delay-1">
+              <h4>Misi</h4>
+              <p>Menyediakan produk berkualitas tinggi dengan layanan custom terbaik dan pengiriman tepat waktu ke seluruh Indonesia.</p>
+            </div>
+          </div>
+
+          <div class="keunggulan-grid reveal">
+            <div class="keunggulan-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Harga Kompetitif
+            </div>
+            <div class="keunggulan-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Custom Sesuai Kebutuhan
+            </div>
+            <div class="keunggulan-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Kualitas Terjamin
+            </div>
+            <div class="keunggulan-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Pengiriman Tepat Waktu
+            </div>
+            <div class="keunggulan-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Bordir &amp; Sablon Presisi
+            </div>
+            <div class="keunggulan-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Revisi Desain Gratis
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LAYANAN ─────────────────────────────────── -->
+  <section class="services" id="layanan">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3.5rem;">
+        <span class="section-label reveal">Layanan Kami</span>
+        <h2 class="section-title reveal">Apa yang Kami Kerjakan</h2>
+        <p class="section-sub reveal">Solusi lengkap untuk setiap kebutuhan pakaian dan seragam kerja Anda</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><img src="assets/icon/icon_seragam.png"></div>
+          <h3>Pengadaan Seragam</h3>
+          <p>Solusi seragam untuk perusahaan, instansi pemerintah, dan lembaga pendidikan dengan standar kualitas profesional.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><img src="assets/icon/custom_icon.png"></div>
+          <h3>Produksi Custom</h3>
+          <p>Produksi pakaian custom sesuai desain dan spesifikasi klien — dari desain hingga hasil jadi siap pakai.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><img src="assets/icon/icon_bordir.png"></div>
+          <h3>Bordir &amp; Sablon</h3>
+          <p>Bordir komputer dan sablon digital berkualitas tinggi untuk logo, nama, dan atribut instansi.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><img src="assets/icon/icon_project.png"></div>
+          <h3>Pengadaan Proyek</h3>
+          <p>Pengadaan seragam dan APD untuk proyek konstruksi, pertambangan, dan industri skala besar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUK UNGGULAN ─────────────────────────── -->
+  <section class="featured" id="produk">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:3rem;">
+        <span class="section-label reveal">Produk Unggulan</span>
+        <h2 class="section-title reveal">Pilihan Terlaris Kami</h2>
+        <p class="section-sub reveal">Produk yang paling banyak dipilih oleh klien kami dari berbagai industri</p>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="katalog.html" class="btn btn-outline-gold reveal">
+          Lihat Semua Produk
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTOFOLIO CAROUSEL ─────────────────────── -->
+  <section class="portfolio" id="portofolio">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:2.5rem;">
+        <span class="section-label reveal">Portofolio</span>
+        <h2 class="section-title reveal">Proyek yang Telah Kami Kerjakan</h2>
+        <p class="section-sub reveal">Dipercaya oleh ratusan klien dari berbagai sektor industri di Indonesia</p>
+      </div>
+
+      <div class="portfolio-track-wrap reveal" id="portfolioWrap">
+        <div class="portfolio-track" id="portfolioTrack"></div>
+      </div>
+
+      <div class="portfolio-nav">
+        <button class="carousel-btn" id="carouselPrev" aria-label="Sebelumnya">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-btn" id="carouselNext" aria-label="Selanjutnya">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label reveal">Mulai Sekarang</span>
+      <h2 class="reveal">Butuh Seragam atau Produk Custom untuk Tim Anda?</h2>
+      <p class="reveal">Konsultasikan kebutuhan Anda bersama tim kami. Kami siap membantu dari desain hingga pengiriman.</p>
+      <div class="cta-actions reveal">
+        <button class="btn btn-white btn-lg" onclick="openWhatsAppGeneral('Halo, saya ingin konsultasi mengenai pengadaan seragam custom.')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+          Konsultasi Sekarang
+        </button>
+        <button class="btn btn-ghost-light btn-lg" onclick="openCompanyProfile()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Lihat Company Profile
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────── -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:0;">
+            <div class="logo-icon"><img src="assets/img/MBS LOGO.png"></div>
+            <div class="logo-text">
+              <span class="logo-name">Mahkota Berkah</span>
+              <span class="logo-sub">Semesta</span>
+            </div>
+          </div>
+          <p>Solusi terpercaya untuk pengadaan seragam, pakaian custom, dan perlengkapan kerja untuk perusahaan, instansi, dan proyek di seluruh Indonesia.</p>
+          <div class="footer-socials">
+            <button class="social-btn" onclick="openWhatsAppGeneral()" title="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+            </button>
+            <button class="social-btn" title="Instagram"><img src="assets/icon/instagram.png"></button>
+            <button class="social-btn" title="Facebook"><img src="assets/icon/fb_icon.png"></button>
+            <button class="social-btn" onclick="openCompanyProfile()" title="Company Profile">📄</button>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="katalog.html">Katalog Produk</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Produk</h4>
+          <ul>
+            <li><a href="katalog.html">Seragam PDH / PDL</a></li>
+            <li><a href="katalog.html">Kaos Polo Custom</a></li>
+            <li><a href="katalog.html">Kaos Event / Gathering</a></li>
+            <li><a href="katalog.html">Jaket Hoodie Custom</a></li>
+            <li><a href="katalog.html">Rompi Safety</a></li>
+            <li><a href="katalog.html">Wearpack / Coverall</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.63 19.79 19.79 0 01.4 1a2 2 0 012.18-2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"/></svg>
+            <span>+62 812-2308-9940</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>official@mahkotaberkahsemesta.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Jl. Supratman No.94<br/>Bandung, Jawa Barat</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Senin – Sabtu, 08.00 – 17.00 WIB</span>
+          </div>
+          <div style="margin-top:1rem;">
+            <button class="btn btn-outline-gold btn-sm" onclick="openCompanyProfile()" style="font-size:0.78rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Company Profile
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 CV Mahkota Berkah Semesta. Semua hak cipta dilindungi.</p>
+        <p>Dibuat dengan ❤️ untuk klien terbaik kami</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING WA ─────────────────────────────── -->
+  <button class="wa-float" id="waFloat" aria-label="Hubungi via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.84L.057 23.8c-.07.263.166.499.43.43l6.02-1.47A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.809 9.809 0 01-4.979-1.352l-.356-.212-3.69.899.934-3.592-.232-.374A9.8 9.8 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+    <span>Hubungi Kami</span>
+  </button>
+
+  <!-- ── MODAL ───────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalContent"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
