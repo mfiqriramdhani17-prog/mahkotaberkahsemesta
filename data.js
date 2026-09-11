@@ -322,7 +322,7 @@ const PRODUCTS = [
   nama: "Jaket Hoodie Promosi Custom",
   kategori: "jaket",
   foto: [
-    { url: ""assets/img/katalog/26_NavyYellowHood.png", label: "Tampak Depan" },
+    { url: ""assets/img/katalog/26_NavyYellowHood.jpg", label: "Tampak Depan" },
     { url: null, label: "Tampak Belakang" },
     { url: null, label: "Detail Sablon" }
   ],
